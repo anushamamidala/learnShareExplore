@@ -40,6 +40,10 @@ header ul li a {
   font-size: 16px;
 }
 
+header ul li a:hover {
+  color: red;
+}
+
 .active {
   color: orangered;
 }
