@@ -1,0 +1,498 @@
+      body {
+          background-color: white;
+          margin-top: 0;
+      }
+      
+      header {
+          display: flex;
+          align-items: center;
+          padding-bottom: 10px;
+          width: 100%;
+          z-index: 9999;
+      }
+      
+      header ul {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          align-items: center;
+          z-index: 999;
+      }
+      
+      header ul li {
+          list-style-type: none;
+          font-weight: 1000;
+      }
+      
+      header ul li a {
+          text-decoration: none;
+          color: #666;
+          font-weight: bolder;
+          font-size: 16px;
+      }
+      
+      header ul li a:hover {
+          color: red;
+      }
+      /* main {
+          padding-top: 60px;
+      }*/
+      
+      .active {
+          color: orangered;
+      }
+      /* home background header image*/
+      
+      .container {
+          text-align: center;
+          color: black;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          align-items: center;
+          height: 400px;
+      }
+      
+      .container h1 {
+          font-size: 2.5rem;
+          font-family: "Be Vietnam", sans-serif;
+          color: #333333;
+      }
+      
+      .laptop-png {
+          display: flex;
+          height: 200px;
+          margin-left: 10%;
+      }
+      
+      .top-left {
+          position: absolute;
+          top: 300px;
+          left: 50px;
+          font-weight: 700;
+          font-size: 42px;
+          line-height: 1.3em;
+          width: 50%;
+          color: rgb(92, 86, 84);
+          text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.13);
+      }
+      
+      .top-right {
+          position: absolute;
+          top: 200px;
+          right: 50px;
+          width: 400px;
+      }
+      
+      .home-background-image {
+          opacity: 0.2;
+          z-index: -1;
+      }
+      
+      .title-caption {
+          font-size: 20px;
+          color: rgba(80, 77, 77, 0.425);
+      }
+      /*  .flex div {
+          padding: 5px;
+          margin-top: 10px;
+          width: 100%;
+          background: #FFF5EE;
+          font-size: 20px;
+          color: black;
+      }
+      
+      .flex a {
+          text-decoration: none;
+          color: black;
+      }
+      */
+      
+      #image img {
+          border-radius: 25px;
+      }
+      
+      #image {
+          height: 450px;
+          width: 900px;
+          /*border: 5px rgb(13, 59, 75) solid;*/
+          /*box-shadow: 30px 10px 10px 20px rgb(83, 141, 160);*/
+          border-radius: 25px 40px;
+          /* margin-top: 60px;*/
+          margin-left: 200px;
+          background-color: white;
+      }
+      
+      #image form {
+          float: right;
+          width: 35%;
+          padding-top: 30px;
+          margin-right: 40px;
+          font-size: 15px;
+          font-weight: bold;
+      }
+      
+      #image form input[type=text] {
+          background-color: rgb(157, 196, 209);
+          height: 20px;
+          width: 200px;
+          font-size: 16px;
+      }
+      
+      #image form input[type=password] {
+          background-color: rgb(157, 196, 209);
+          height: 20px;
+          width: 200px;
+          font-size: 1.8em;
+      }
+      
+      #wrap {
+          float: left;
+          width: 200px;
+          color: white;
+      }
+      
+      nav ul li {
+          text-decoration: none;
+          display: inline;
+          float: right;
+          margin-right: 150px;
+          margin-top: -110px;
+      }
+      
+      #image form button {
+          background-color: rgb(226, 232, 235);
+          border: solid;
+          width: 100px;
+          height: 30px;
+          color: rgb(21, 45, 53);
+          margin-left: 37px;
+          margin-top: 20px;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 15px;
+      }
+      
+      nav ul li a {
+          color: rgb(1, 14, 19);
+          font-weight: bold;
+      }
+      /*footer {
+          padding-left: 580px;
+          background-color: rgb(54, 51, 51);
+          height: 35px;
+          color: white;
+          font-size: 17px;
+          margin-top: 50px;
+          width: auto;
+          clear: both;
+      }
+      */
+      
+      .grid {
+          width: 80%;
+          margin: 20px auto;
+          border: 1px solid grey;
+          display: grid;
+          grid-template-rows: 150px 200px 200px 60px;
+          grid-template-columns: repeat(3, 1fr) 150px;
+          grid-gap: 50px;
+      }
+      
+      .gridreg {
+          width: 50%;
+          margin: 20px;
+          border: 1px solid white;
+          display: grid;
+          grid-template-rows: 200px 200px;
+          grid-template-columns: repeat(3, 1fr);
+          grid-gap: 60px;
+          float: left;
+      }
+      
+      .reg h1 {
+          margin-left: 200px;
+      }
+      
+      .container2 {
+          position: relative;
+          width: 50%;
+      }
+      
+      .overlay2 {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          height: 100%;
+          width: 100%;
+          opacity: 0;
+          transition: .5s ease;
+          background-color: #FFF5EE;
+      }
+      
+      .container2:hover .overlay2 {
+          opacity: 1;
+      }
+      
+      .text {
+          color: black;
+          font-size: 20px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+          text-align: center;
+      }
+      
+      .regform h2 {
+          margin-left: 120px;
+      }
+      
+      .regform {
+          height: 400px;
+          width: 350px;
+          background-color: rgb(179, 241, 221);
+          margin-top: 30px;
+          margin-right: 20px;
+          float: right;
+      }
+      
+      .regitem1 {
+          margin-left: 40px;
+      }
+      
+      .regitem2 {
+          margin-left: 40px;
+      }
+      
+      .regitem3 {
+          margin-left: 60px;
+      }
+      
+      .regitem4 {
+          margin-left: 15px;
+      }
+      
+      .regitem5 {
+          margin-left: 50px;
+      }
+      
+      .regform button {
+          margin-left: 140px;
+          background-color: rgb(226, 232, 235);
+          border: solid;
+          width: 100px;
+          height: 30px;
+          color: rgb(21, 45, 53);
+          margin-top: 20px;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 15px;
+      }
+      
+      .div1 {
+          background-color: #FFF5EE;
+          color: black;
+          grid-column: 1/-1;
+          padding: 2px;
+      }
+      
+      .div2 {
+          background-color: cadetblue;
+      }
+      
+      .div3 {
+          background-color: cadetblue;
+      }
+      
+      .div4 {
+          background-color: cadetblue;
+      }
+      
+      .div5 {
+          /*background-color: rgb(21, 37, 37);*/
+          background-color: #FFF5EE;
+          color: black;
+          grid-column: 4/5;
+          grid-row: 2/4;
+          padding: 2px;
+      }
+      
+      .div6 {
+          background-color: #FFF5EE;
+          color: black;
+          padding: 20px;
+          grid-column: 1/4;
+      }
+      
+      .div7 {
+          background-color: #FFF5EE;
+          color: black;
+          grid-column: 1/-1;
+          padding: 2px;
+      }
+      /*edit profile*/
+      
+      .editprofileform {
+          /*margin-left: 380px;*/
+          background-color: rgb(179, 241, 221);
+          width: 450px;
+          margin-bottom: 60px;
+          padding-left: 100px;
+      }
+      
+      .editprofileform h2 {
+          padding-top: 20px;
+          margin-left: 90px;
+      }
+      
+      .editprofileform button {
+          margin-left: 110px;
+          background-color: rgb(226, 232, 235);
+          border: solid;
+          width: 170px;
+          height: 30px;
+          color: rgb(21, 45, 53);
+          margin-top: 20px;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 15px;
+          margin-bottom: 15px;
+      }
+      
+      .flexedititem1 {
+          width: 250px;
+      }
+      
+      .flexedititem2 {
+          width: 250px;
+      }
+      
+      footer {
+          display: flex;
+          flex-direction: row;
+          height: 300px;
+          background-color: #333333;
+          clear: both;
+      }
+      
+      .footer-website-description {
+          display: flex;
+          flex-direction: column;
+          width: 30%;
+          margin-left: 5%;
+      }
+      
+      #footer-courses {
+          color: white;
+          font-weight: bolder;
+          font-size: 25px;
+          padding-bottom: 10px;
+      }
+      
+      .footer-website-description-courses {
+          margin-top: 50px;
+          display: flex;
+          flex-direction: column;
+          width: 15%;
+          margin-left: 10%;
+      }
+      
+      .footer-website-description-courses p,
+      .footer-website-description-about p {
+          color: white;
+          margin: 0;
+          font-size: 13px;
+      }
+      
+      .footer-website-description-about {
+          margin-top: 50px;
+          display: flex;
+          flex-direction: column;
+          margin-left: 0;
+      }
+      
+      #footer-courses-about {
+          margin-top: 0;
+          margin-bottom: 0;
+          color: white;
+          font-weight: bolder;
+          font-size: 25px;
+          padding-bottom: 10px;
+      }
+      
+      @media(min-width: 768px) {
+          main {
+              padding-top: 60px;
+          }
+          /*.flex {
+              display: flex;
+              align-items: flex-end;
+          }*/
+          .flexeditprofile {
+              display: flex;
+              justify-content: space-around;
+              flex-wrap: wrap;
+              align-items: center;
+          }
+          header {
+              position: fixed;
+              width: 80%;
+              height: 60px;
+              background-color: white;
+              margin-left: 10%;
+          }
+          header ul {
+              justify-content: flex-end;
+              flex-direction: row;
+          }
+          header ul li {
+              margin-right: 30px;
+          }
+          .container {
+              flex-direction: row;
+              height: 600px;
+          }
+          .container h1 {
+              font-size: 40px;
+              margin-left: 200px;
+              margin-right: 200px;
+              padding-left: 60px;
+          }
+          .laptop-png {
+              height: 400px;
+              margin-left: 100px;
+          }
+          footer {
+              flex-direction: row;
+              height: 300px;
+          }
+          .footer-website-description {
+              width: 30%;
+          }
+          #footer-courses {
+              font-size: 25px;
+          }
+          .footer-website-description-courses {
+              margin-top: 50px;
+              display: flex;
+              flex-direction: column;
+              width: 15%;
+              margin-left: 10%;
+          }
+          .footer-website-description-about {
+              margin-top: 50px;
+              display: flex;
+              flex-direction: column;
+              margin-left: 0;
+          }
+          .footer-title-underline {
+              margin-top: 50px;
+              color: rgba(255, 255, 255, 0.575);
+              font-size: 20px;
+          }
+      }

@@ -1,0 +1,85 @@
+body {
+    /*background-image: linear-gradient( white 0%, #172a3a 50%);*/
+    background-color: white;
+    height: auto;
+}
+
+#image img {
+    border-radius: 25px;
+}
+
+#image {
+    height: 450px;
+    width: 900px;
+    border: 5px rgb(13, 59, 75) solid;
+    box-shadow: 30px 10px 10px 20px rgb(83, 141, 160);
+    border-radius: 25px 40px;
+    margin-top: 60px;
+    margin-left: 200px;
+    background-color: rgb(202, 230, 240);
+}
+
+#image form {
+    float: right;
+    width: 35%;
+    padding-top: 30px;
+    margin-right: 40px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#image form input[type=text] {
+    background-color: rgb(157, 196, 209);
+    height: 20px;
+    width: 200px;
+    font-size: 50px;
+}
+
+#image form input[type=password] {
+    background-color: rgb(157, 196, 209);
+    height: 20px;
+    width: 200px;
+    font-size: 1em;
+}
+
+#wrap {
+    float: left;
+    width: 200px;
+    color: white;
+}
+
+nav ul li {
+    text-decoration: none;
+    display: inline;
+    float: right;
+    margin-right: 150px;
+    margin-top: -110px;
+}
+
+#image form button {
+    background-color: rgb(171, 191, 199);
+    border: solid;
+    width: 100px;
+    height: 30px;
+    color: rgb(21, 45, 53);
+    margin-left: 37px;
+    margin-top: 20px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+}
+
+nav ul li a {
+    color: rgb(1, 14, 19);
+    font-weight: bold;
+}
+
+footer {
+    padding-left: 580px;
+    background-color: rgb(1, 14, 19);
+    height: 30px;
+    color: white;
+    font-size: 17px;
+    margin-top: 50px;
+    width: auto;
+}
